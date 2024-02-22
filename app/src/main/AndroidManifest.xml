@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+    tools:ignore="CoarseFineLocation"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity android:name=".IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:theme="@style/AppBaseTheme"
+            android:name=".MainActivity"
+            android:label=""/>
+
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="도서목록"
+            android:name=".BooksActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="도서상세정보"
+            android:name=".BookActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="배송정보"
+            android:name=".order.ShippingActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="주문서"
+            android:name=".order.OrderActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="나의 페이지"
+            android:name=".mypage.MyPageActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="메모장"
+            android:name=".mypage.MemoActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="동영상강좌"
+            android:name=".video.VideoActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="동영상강좌"
+            android:name=".video.VideoPlayActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="고객센터"
+            android:name=".customer.CustomerActivity" />
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="고객센터"
+            android:name=".customer.MarketInfoActivity"/>
+        <activity
+            android:name=".customer.BoardActivity"
+            android:label="고객문의 게시판"
+            android:theme="@style/Theme.BookMarket" />
+        <activity
+            android:name=".customer.WriteBoardActivity"
+            android:label="글쓰기"
+            android:theme="@style/Theme.BookMarket" />
+        <activity
+            android:name=".customer.DetailBoardActivity"
+            android:label="상세보기"
+            android:theme="@style/Theme.BookMarket" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.androidbook.bookmarket.mypage.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBmdGHKbsE0u3A966FWWQWhqbisygn6IRs" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+</manifest>
