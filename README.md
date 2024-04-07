@@ -10,4 +10,4 @@
 + **나찬웅**: android Application담당 [안드로이드 주간시연](https://www.youtube.com/watch?v=34qbyvwrOPg)
 
 ## 프로젝트 구조
-<https://github.com/jihohyeseong/SBS/blob/main/image/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B5%AC%EC%A1%B0.png>
+![프로젝트 구조](https://github.com/jihohyeseong/SBS/assets/152616772/466c66f3-de53-496d-8fc6-01e3a5b848c4)
