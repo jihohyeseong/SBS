@@ -5,8 +5,8 @@
 
 ## 개발자소개
 + **이혜성**: 팀장, Backend Spring담당
-+ **송승엽**: Frontend React담당
-+ **하은옥**: ios Application담당
++ **송승엽**: Frontend React담당 [리액트+스프링부트 주간시연동영상](https://youtu.be/sjpvDSf6YvI)
++ **하은옥**: ios Application담당 [아이폰 주간시연동영상](https://youtu.be/j4eroFaMCKU)
 + **나찬웅**: android Application담당 [안드로이드 주간시연동영상](https://www.youtube.com/watch?v=34qbyvwrOPg)
 
 ## 프로젝트 구조
