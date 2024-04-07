@@ -4,10 +4,7 @@
 책 내용 텍스트를 통해 배경이미지 제공 등 편리한 기능 제공
 
 ## 개발자소개
--**이혜성**: 팀장, Backend Spring담당
-
--**송승엽**: Frontend React담당
-
--**하은옥**: ios Application담당
-
--**나찬웅**: android Application담당 [안드로이드 주간시연](https://www.youtube.com/watch?v=34qbyvwrOPg)
++**이혜성**: 팀장, Backend Spring담당
++**송승엽**: Frontend React담당
++**하은옥**: ios Application담당
++**나찬웅**: android Application담당 [안드로이드 주간시연](https://www.youtube.com/watch?v=34qbyvwrOPg)
