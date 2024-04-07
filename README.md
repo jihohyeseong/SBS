@@ -8,3 +8,6 @@
 + **송승엽**: Frontend React담당
 + **하은옥**: ios Application담당
 + **나찬웅**: android Application담당 [안드로이드 주간시연](https://www.youtube.com/watch?v=34qbyvwrOPg)
+
+## 프로젝트 구조
+<https://github.com/jihohyeseong/SBS/blob/main/image/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B5%AC%EC%A1%B0.png>
