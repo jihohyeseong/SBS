@@ -12,4 +12,3 @@
 ## 프로젝트 구조
 ![프로젝트 구조](https://github.com/jihohyeseong/SBS/assets/152616772/466c66f3-de53-496d-8fc6-01e3a5b848c4)
 
-<img src="https://github.com/jihohyeseong/SBS/assets/152616772/466c66f3-de53-496d-8fc6-01e3a5b848c4" width="700" height="400"/>
