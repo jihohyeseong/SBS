@@ -5,7 +5,7 @@
 
 ## 개발자소개
 + **이혜성**: 팀장, Backend Spring담당
-+ **송승엽**: Frontend React담당 [리액트+스프링부트 주간시연동영상](https://youtu.be/sjpvDSf6YvI)
++ **송승엽**: 반응형 React담당 [PC화면 주간시연동영상](https://youtu.be/sjpvDSf6YvI) [모바일화면 주간시연동영상(구현예정)]()
 + **하은옥**: ios Application담당 [아이폰 주간시연동영상](https://youtu.be/j4eroFaMCKU)
 + **나찬웅**: android Application담당 [안드로이드 주간시연동영상](https://youtu.be/CmmwL0ND3zA?si=giIplmFsghhF10fg)
 
