@@ -22,7 +22,7 @@
 
 ## 구현화면
 
-### 웹화면
+### 웹화면(이혜성, 송승엽)
 <ul>
     <li>회원가입</li></li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85.png" width="1300" height="600">
@@ -47,3 +47,9 @@
     <li>TTS(Text-to-Speech)AI 책 읽어주기(예정)</li>
     <li>TTI(Text-to-Image)AI 책 내용 이미지변환(예정)</li>
 </ul>
+
+### 안드로이드 앱 화면(나찬웅)
+구현중
+
+### IOS 앱 화면(하은옥)
+구현중
