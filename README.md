@@ -15,3 +15,9 @@
 ## 프로젝트 구조
 ![프로젝트 구조](https://github.com/jihohyeseong/SBS/blob/main/image/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B5%AC%EC%A1%B0.png)
 
+## 프로젝트 상세설명
+기본적인 온라인 도서 쇼핑몰을 웹, 안드로이드 어플리케이션, ios 어플리케이션 3가지 형태로 구현한다.
+구현한 도서 쇼핑몰에 chatGPT api를 활용하여 작성된 후기 댓글들을 요약해서 보여준다.
+또한 온라인 e북을 이용할 때 책에서 묘사하는 배경을 상상에 그치는것이 아닌 text-to-image ai를 활용하여 이미지로 회원에게 보여줄 수 있고, 
+text-to-speach ai를 활용하여 회원에게 책을 읽어준다.
+
