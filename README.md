@@ -21,9 +21,14 @@
 ![기능구성도](https://github.com/jihohyeseong/SBS/blob/main/image/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8API.png)
 
 ## 구현화면
+
+#### 웹화면
 <ul>
     <li>회원가입</li></li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85.png" width="1300" height="600">
     <li>로그인</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A1%9C%EA%B7%B8%EC%9D%B8.png" width="1300" height="600">
+    <li>로그인</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A1%9C%EA%B7%B8%EC%9D%B8.png" width="1300" height="600">
+    
 </ul>
