@@ -20,5 +20,7 @@
 ## 기능구성도
 ![기능구성도](https://github.com/jihohyeseong/SBS/blob/main/image/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8API.png)
 
+## 구현화면
+
 
 
