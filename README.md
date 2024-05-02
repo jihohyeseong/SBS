@@ -9,6 +9,9 @@
 + **하은옥**: ios Application담당 [아이폰 주간시연동영상](https://youtu.be/j4eroFaMCKU)
 + **나찬웅**: android Application담당 [안드로이드 주간시연동영상](https://youtu.be/CmmwL0ND3zA?si=giIplmFsghhF10fg)
 
+## 기능구성도
+
+
 ## 프로젝트 구조
 ![프로젝트 구조](https://github.com/jihohyeseong/SBS/assets/152616772/466c66f3-de53-496d-8fc6-01e3a5b848c4)
 
