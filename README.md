@@ -22,7 +22,7 @@
 
 ## 구현화면
 
-#### 웹화면
+### 웹화면
 <ul>
     <li>회원가입</li></li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85.png" width="1300" height="600">
