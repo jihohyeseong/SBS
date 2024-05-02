@@ -2,6 +2,13 @@
 기존의 오프라인(서점)에서 책을 구매하는 소비자를 위해 간편하고 빠른 
 서비스를 제공하는 온라인 북 쇼핑몰을 제공
 
+<details open>
+  <summary><h2>📋 Table of Contents</h2></summary>
+  <ul>
+    <li><a href="#프로젝트-상세설명">프로젝트 상세설명</a></li>
+  </ul> 
+</details>
+
 ## 개발자소개
 + **이혜성**: 팀장, Backend Spring담당
 + **송승엽**: 반응형 React담당 [PC화면 주간시연동영상](https://youtu.be/sjpvDSf6YvI) / [모바일화면 주간시연동영상](https://www.youtube.com/watch?v=uxyQck4kF7g)
