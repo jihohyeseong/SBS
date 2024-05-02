@@ -23,5 +23,5 @@
 ## 구현화면
 <ul>
     <li>로그인</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A1%9C%EA%B7%B8%EC%9D%B8.png" width="750" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A1%9C%EA%B7%B8%EC%9D%B8.png" width="750" height="600">
 </ul>
