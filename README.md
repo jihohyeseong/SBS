@@ -10,7 +10,7 @@
 + **나찬웅**: android Application담당 [안드로이드 주간시연동영상](https://youtu.be/CmmwL0ND3zA?si=giIplmFsghhF10fg)
 
 ## 기능구성도
-
+![기능구성도](https://github.com/jihohyeseong/SBS/blob/main/image/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8API.png)
 
 ## 프로젝트 구조
 ![프로젝트 구조](https://github.com/jihohyeseong/SBS/assets/152616772/466c66f3-de53-496d-8fc6-01e3a5b848c4)
