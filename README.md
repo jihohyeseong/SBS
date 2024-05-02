@@ -5,7 +5,16 @@
 <details open>
   <summary><h2>📋 Table of Contents</h2></summary>
   <ul>
+    <li><a href="#개발자소개">개발자소개</a></li>
     <li><a href="#프로젝트-상세설명">프로젝트 상세설명</a></li>
+    <li><a href="#프로젝트-구조">프로젝트 구</a></li>
+    <li><a href="#기능구성도">기능구성도</a></li>
+    <li><a href="#구현화면">구현화면</a></li>
+    <ul>
+      <li><a href="#웹화면이혜성-송승엽">웹 화면</a></li>
+      <li><a href="#안드로이드-앱-화면나찬웅">안드로이드 앱 화면</a></li>
+      <li><a href="#ios-앱-화면하은옥">IOS 앱 화면</a></li>
+    </ul>
   </ul> 
 </details>
 
