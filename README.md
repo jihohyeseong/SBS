@@ -45,20 +45,23 @@
     <li>로그인</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A1%9C%EA%B7%B8%EC%9D%B8.png" width="1300" height="500">
     <li>메인페이지</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png" width="1300" height="500">
     <li>책 상세페이지</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%B1%85%EC%83%81%EC%84%B8.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%8F%84%EC%84%9C%EC%83%81%EC%84%B8.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%8F%84%EC%84%9C%EC%83%81%EC%84%B82.png" width="1300" height="500">
     <li>목록별 페이지</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B8%EA%B8%B0%EB%8F%84%EC%84%9C.png" width="1300" height="500">
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B8%EA%B8%B0%EB%8F%84%EC%84%9C.png" width="1300" height="500">
     <li>장바구니</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88.png" width="1300" height="500">
-    <li>구매목록</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B5%AC%EB%A7%A4%EB%AA%A9%EB%A1%9D.png" width="1300" height="500">
+    <li>구매</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B5%AC%EB%A7%A4.jpg" width="300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B5%AC%EB%A7%A4%EC%99%84%EB%A3%8C.png" width="1300" height="500">
     <li>마이메뉴</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A7%88%EC%9D%B4%EB%A9%94%EB%89%B4.png" width="1300" height="500">
-    <li>관리자페이지(구현중)</li>
-    <li>온라인e북(예정)</li>
+    <li>관리자페이지</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B4%80%EB%A6%AC%EC%9E%90.png" width="1300" height="500">
+    <li>온라인e북</li>
     <li>후기 댓글 요약(예정)</li>
     <li>TTS(Text-to-Speech)AI 책 읽어주기(예정)</li>
     <li>TTI(Text-to-Image)AI 책 내용 이미지변환(예정)</li>
