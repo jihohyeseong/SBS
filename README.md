@@ -31,7 +31,7 @@
 + 온라인 e북을 이용할 때 text-to-speach ai를 활용하여 회원에게 책을 읽어준다.
 
 ## 프로젝트 구조
-![프로젝트 구조](https://github.com/jihohyeseong/SBS/blob/main/image/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B5%AC%EC%A1%B0.png)
+![프로젝트 구조](https://github.com/jihohyeseong/SBS/blob/main/image/27%EC%A1%B0_%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%A3%BC%EC%9A%94%20%EC%A0%81%EC%9A%A9%20%EA%B8%B0%EC%88%A0%20%EB%B0%8F%20%EA%B5%AC%EC%A1%B0.jpg)
 
 ## 기능구성도
 ![기능구성도](https://github.com/jihohyeseong/SBS/blob/main/image/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8API.png)
