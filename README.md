@@ -62,9 +62,11 @@
     <li>관리자페이지</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B4%80%EB%A6%AC%EC%9E%90.png" width="1300" height="500">
     <li>온라인e북</li>
-    <li>후기 댓글 요약(예정)</li>
-    <li>TTS(Text-to-Speech)AI 책 읽어주기(예정)</li>
-    <li>TTI(Text-to-Image)AI 책 내용 이미지변환(예정)</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B4%80%EB%A6%AC%EC%9E%90.png" width="1300" height="500">
+    <li>후기 댓글 요약</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%8C%93%EA%B8%80%EC%9A%94%EC%95%BD.png" width="1300" height="500">
+    <li>TTS(Text-to-Speech)AI 책 읽어주기, 이미지변환</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%83%9D%EC%84%B1.png" width="1300" height="500">
 </ul>
 
 ### 안드로이드 앱 화면(나찬웅)
