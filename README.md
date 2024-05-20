@@ -51,7 +51,7 @@
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%8F%84%EC%84%9C%EC%83%81%EC%84%B82.png" width="1300" height="500">
     <li>목록별 페이지</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B8%EA%B8%B0%EB%8F%84%EC%84%9C.png" width="1300" height="500">
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B8%EA%B8%B0%EB%8F%84%EC%84%9C.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC.png" width="1300" height="500">
     <li>장바구니</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88.png" width="1300" height="500">
     <li>구매</li>
