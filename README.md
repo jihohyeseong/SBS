@@ -72,6 +72,7 @@
 ### 웹 앱 화면(송승엽)
 <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9B%B9%EC%95%B11.jpg" width="300" height="500">
 <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9B%B9%EC%95%B12.jpg" width="300" height="500">
+
 ### 안드로이드 앱 화면(나찬웅)
 구현중
 
