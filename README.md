@@ -1,5 +1,5 @@
 # SBS Online Bookmarket
-<h3><a href="https://cut-prune-d8b.notion.site/API-9e0aa8a740524b0ebf45c52894c15d1c?pvs=4">
+<h3><a href="https://shine-territory-e9e.notion.site/07680bdd72944508869fd49ae3224925?v=37539025f336409d958e9d0d0f73cffe">
       📜 REST API 명세서</a></h3>
 기존의 오프라인(서점)에서 책을 구매하는 소비자를 위해 간편하고 빠른 
 서비스를 제공하는 온라인 북 쇼핑몰을 제공
