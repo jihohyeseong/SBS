@@ -1,4 +1,5 @@
 # SBS Online Bookmarket
+HSU 2024 Capstone Project
 <h3><a href="https://shine-territory-e9e.notion.site/07680bdd72944508869fd49ae3224925?v=37539025f336409d958e9d0d0f73cffe">
       📜 REST API 명세서</a></h3>
 
