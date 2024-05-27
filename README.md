@@ -84,3 +84,6 @@ HSU 2024 Capstone Project
 
 ### IOS 앱 화면(하은옥)
 구현중
+
+## 비교표
+<img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%B9%84%EA%B5%90%ED%91%9C.png">
