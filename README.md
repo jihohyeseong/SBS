@@ -75,6 +75,9 @@ HSU 2024 Capstone Project
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%83%9D%EC%84%B1.png" width="1300" height="500">
 </ul>
 
+## 비교표
+<img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%B9%84%EA%B5%90%ED%91%9C.png">
+
 ## 9.25한성공학경진대회발표시 추가예정사항
 + 실시간 배송 기능 추가
 + 카카오, 네이버 등 소셜 로그인 추가
