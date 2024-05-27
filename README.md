@@ -80,8 +80,12 @@ HSU 2024 Capstone Project
 <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9B%B9%EC%95%B12.jpg" width="300" height="500">
 
 ### 안드로이드 앱 화면(나찬웅)
+구현중
+
 
 ### IOS 앱 화면(하은옥)
+구현중
+
 
 ## 비교표
 <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%B9%84%EA%B5%90%ED%91%9C.png">
