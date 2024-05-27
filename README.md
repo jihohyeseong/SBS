@@ -16,7 +16,7 @@ HSU 2024 Capstone Project
       <li><a href="#웹화면이혜성-송승엽">웹 화면</a></li>
       <li><a href="#안드로이드-앱-화면나찬웅">안드로이드 앱 화면</a></li>
       <li><a href="#ios-앱-화면하은옥">IOS 앱 화면</a></li>
-      <li><a href="#ios-앱-화면하은옥">한성공학경진대회 추가사항항</a></li>
+      <li><a href="#ios-앱-화면하은옥">9.25 한성공학경진대회 추가사항</a></li>
     </ul>
   </ul> 
 </details>
