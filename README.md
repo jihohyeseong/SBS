@@ -126,6 +126,14 @@ HSU 2024 Capstone Project
     <td class="tg-fjfl">React- PC<br>React - mobile</td>
   </tr>
 </tbody></table>
+<br/>
+최우수 : https://github.com/capstone-aloha     
+<br/>
+우수1 : https://github.com/TeamCookCaps  
+<br/>
+우수2 : https://github.com/godi00/capstone  
+
+<br/>
 
 
 ## 9.25한성공학경진대회발표시 추가예정사항
