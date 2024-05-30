@@ -63,26 +63,31 @@ HSU 2024 Capstone Project
     <li>메인페이지</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png" width="1300" height="500">
     <li>책 상세페이지</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%8F%84%EC%84%9C%EC%83%81%EC%84%B8.png" width="1300" height="500">
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%8F%84%EC%84%9C%EC%83%81%EC%84%B82.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%B1%85%EC%83%81%EC%84%B81.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%B1%85%EC%83%81%EC%84%B82.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%B1%85%EC%83%81%EC%84%B83.png" width="1300" height="500">
     <li>목록별 페이지</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B8%EA%B8%B0%EB%8F%84%EC%84%9C.png" width="1300" height="500">
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%AA%A9%EB%A1%9D%EB%B3%841.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%AA%A9%EB%A1%9D%EB%B3%842.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%AA%A9%EB%A1%9D%EB%B3%843.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%AA%A9%EB%A1%9D%EB%B3%844.png" width="1300" height="500">
     <li>장바구니</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88.png" width="1300" height="500">
     <li>구매</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B5%AC%EB%A7%A4.jpg" width="300" height="500">
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B5%AC%EB%A7%A4%EC%99%84%EB%A3%8C.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B5%AC%EB%A7%A4%EA%B2%B0%EC%A0%9C.jpg" width="300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B5%AC%EB%A7%A4.png" width="1300" height="500">
     <li>마이메뉴</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%A7%88%EC%9D%B4%EB%A9%94%EB%89%B4.png" width="1300" height="500">
     <li>관리자페이지</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B4%80%EB%A6%AC%EC%9E%90.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B4%80%EB%A6%AC%EC%9E%90%ED%8E%98%EC%9D%B4%EC%A7%80.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B4%80%EB%A6%AC%EC%9E%90%EC%9E%AC%EA%B3%A0.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EA%B4%80%EB%A6%AC%EC%9E%90%EC%A0%95%EC%82%B0.png" width="1300" height="500">
     <li>온라인e북</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/e%EB%B6%81.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%98%A8%EB%9D%BC%EC%9D%B8E%EB%B6%81.png" width="1300" height="500">
     <li>후기 댓글 요약</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%8C%93%EA%B8%80%EC%9A%94%EC%95%BD.png" width="1300" height="500">
     <li>TTS(Text-to-Speech)AI 책 읽어주기, 이미지변환</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%83%9D%EC%84%B1.png" width="1300" height="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/main/image/ai.png" height="500">
 </ul>
 </details>
 <br/>
