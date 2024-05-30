@@ -86,22 +86,7 @@ HSU 2024 Capstone Project
 
 
 ## 비교표
-<style type="text/css">
-.tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
-.tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-lklj{background-color:#ecf4ff;border-color:#000000;color:#000000;
-  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;font-weight:bold;text-align:center;
-  vertical-align:top}
-.tg .tg-fjfl{background-color:#ffffff;border-color:inherit;
-  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;font-weight:bold;text-align:center;
-  vertical-align:top}
-.tg .tg-v56v{background-color:#ffe2e2;border-color:inherit;
-  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;font-weight:bold;text-align:center;
-  vertical-align:top}
-</style>
+
 <table class="tg"><thead>
   <tr>
     <th class="tg-fjfl"></th>
@@ -140,7 +125,7 @@ HSU 2024 Capstone Project
     <td class="tg-fjfl">React- PC<br>React - mobile</td>
   </tr>
 </tbody></table>
-<img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%B9%84%EA%B5%90%ED%91%9C.png">
+
 
 ## 9.25한성공학경진대회발표시 추가예정사항
 + 실시간 배송 기능 추가
