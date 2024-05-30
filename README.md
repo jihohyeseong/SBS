@@ -53,6 +53,8 @@ HSU 2024 Capstone Project
 ## 구현화면
 
 ### 웹화면(이혜성, 송승엽)
+<details>
+<summary> ▶️ click! </summary>
 <ul>
     <li>회원가입</li></li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85.png" width="1300" height="500">
@@ -82,6 +84,7 @@ HSU 2024 Capstone Project
     <li>TTS(Text-to-Speech)AI 책 읽어주기, 이미지변환</li>
         <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%83%9D%EC%84%B1.png" width="1300" height="500">
 </ul>
+</details>
 <br/>
 
 ### 웹 앱 화면
