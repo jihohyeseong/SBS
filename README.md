@@ -92,3 +92,4 @@ HSU 2024 Capstone Project
 + 실시간 배송 기능 추가
 + 카카오, 네이버 등 소셜 로그인 추가
 + CSS 디자인 최적화
++ Azure, GCP 배포추가
