@@ -86,6 +86,53 @@ HSU 2024 Capstone Project
 
 
 ## 비교표
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-fymr"></th>
+    <th class="tg-fymr">SBS Bookmarket</th>
+    <th class="tg-fymr">2023 최우수</th>
+    <th class="tg-fymr">2023 우수1</th>
+    <th class="tg-fymr">2023 우수2</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-fymr">code</td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">doc</td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">영상</td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">화면</td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+  </tr>
+</tbody>
+</table>
 <img src="https://github.com/jihohyeseong/SBS/blob/main/image/%EB%B9%84%EA%B5%90%ED%91%9C.png">
 
 ## 9.25한성공학경진대회발표시 추가예정사항
