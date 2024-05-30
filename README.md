@@ -46,7 +46,7 @@ HSU 2024 Capstone Project
 
 <br/>
 
-## 📌 기술 스택
+## ✔️ 기술 스택
 <div>
 <table>
    <tr>
