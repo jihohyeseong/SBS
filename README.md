@@ -11,6 +11,7 @@ HSU 2024 Capstone Project
   <ul>
     <li><a href="#개발자소개">개발자소개</a></li>
     <li><a href="#프로젝트-상세설명">프로젝트 상세설명</a></li>
+    <li><a href="#%EF%B8%8F-기술-스택">기술 스택</a></li>
     <li><a href="#프로젝트-구조">프로젝트 구조</a></li>
     <li><a href="#구현화면">구현화면</a></li>
     <ul>
