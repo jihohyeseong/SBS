@@ -156,8 +156,33 @@ HSU 2024 Capstone Project
 <br/>
 
 ### 안드로이드 앱 화면(나찬웅)
-구현중
+<details>
+<summary> ▶️ Click! </summary>
+<ul>
+    <li>회원가입</li>
+        
+    <li>로그인</li>
+       
+    <li>메인페이지</li>
+       
+    <li>세부정보</li>
+        
+    <li>댓글</li>
+        
+    <li>도서랭킹(정렬1)</li>
+        
+    <li>신간도서(정렬2)</li>
+       
+    <li>장바구니</li>
+       
+    <li>카카오페이</li>
+        
+    <li>마이페이지</li>
+        
+</ul>
+</details>
 <br/>
+
 
 ### IOS 앱 화면(하은옥)
 <details>
