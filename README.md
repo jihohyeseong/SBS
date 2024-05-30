@@ -160,38 +160,33 @@ HSU 2024 Capstone Project
 <br/>
 
 ### IOS 앱 화면(하은옥)
-- 회원가입
-![IMG_4480](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4480.PNG)
-
-- 로그인
-![IMG_4481](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4481.PNG)
-
-- 메인페이지
-![IMG_4482](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4482.PNG)
-
-- 세부정보
-![IMG_4483](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4483.PNG)
-
-- 댓글
-![IMG_4485](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4485.PNG)
-
-- 책장정렬
-![IMG_4486](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4486.PNG)
-
-- 책장정렬2
-![IMG_4487](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4487.PNG)
-
-- 장바구니
-![IMG_4489](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4489.PNG)
-
-- 카카오페이
-![IMG_4490](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4490.PNG)
-
-- 마이페이지
-![IMG_4491](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4491.PNG)
-
-- AI 댓글요약
-![IMG_4492](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4492.PNG)
+<details>
+<summary> ▶️ Click! </summary>
+<ul>
+    <li>회원가입</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4480.PNG" width="500">
+    <li>로그인</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4481.PNG" width="500">
+    <li>메인페이지</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4482.PNG" width="500">
+    <li>세부정보</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4483.PNG" width="500">
+    <li>댓글</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4485.PNG" width="500">
+    <li>책장정렬</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4486.PNG" width="500">
+    <li>책장정렬2</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4487.PNG" width="500">
+    <li>장바구니</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4489.PNG" width="500">
+    <li>카카오페이</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4490.PNG" width="500">
+    <li>마이페이지</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4491.PNG" width="500">
+    <li>AI 댓글요약</li>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4492.PNG" width="500">
+</ul>
+</details>
 <br/>
 
 
