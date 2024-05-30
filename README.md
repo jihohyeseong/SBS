@@ -164,27 +164,27 @@ HSU 2024 Capstone Project
 <summary> ▶️ Click! </summary>
 <ul>
     <li>회원가입</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4480.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4480.PNG" width="300">
     <li>로그인</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4481.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4481.PNG" width="300">
     <li>메인페이지</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4482.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4482.PNG" width="300">
     <li>세부정보</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4483.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4483.PNG" width="300">
     <li>댓글</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4485.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4485.PNG" width="300">
     <li>책장정렬</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4486.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4486.PNG" width="300">
     <li>책장정렬2</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4487.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4487.PNG" width="300">
     <li>장바구니</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4489.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4489.PNG" width="300">
     <li>카카오페이</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4490.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4490.PNG" width="300">
     <li>마이페이지</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4491.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4491.PNG" width="300">
     <li>AI 댓글요약</li>
-        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4492.PNG" width="500">
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4492.PNG" width="300">
 </ul>
 </details>
 <br/>
