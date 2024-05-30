@@ -34,7 +34,8 @@ HSU 2024 Capstone Project
 + **송승엽**: 반응형 React담당 [🖥️[PC화면 시연동영상](https://www.youtube.com/watch?v=-A_0slTbHPo)] | [📱[모바일화면 시연동영상](https://www.youtube.com/watch?v=hej5DR7b_rE&t=1s)]
 + **하은옥**: ios Application담당 [아이폰 시연동영상](https://youtu.be/j4eroFaMCKU)
 + **나찬웅**: android Application담당 [안드로이드 시연동영상](https://youtu.be/CmmwL0ND3zA?si=giIplmFsghhF10fg)
-+ <br/>
+<br/>
+<br/>
 
 ## 프로젝트 상세설명
 + 기본적인 온라인 도서 쇼핑몰을 웹, 안드로이드 어플리케이션, ios 어플리케이션 3가지 형태로 구현한다.
