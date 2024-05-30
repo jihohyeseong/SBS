@@ -162,6 +162,17 @@ HSU 2024 Capstone Project
 
 ### IOS 앱 화면(하은옥)
 <li>회원가입</li>
+![IMG_4480](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4480.PNG)
+![IMG_4481](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4481.PNG)
+![IMG_4482](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4482.PNG)
+![IMG_4483](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4483.PNG)
+![IMG_4485](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4485.PNG)
+![IMG_4486](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4486.PNG)
+![IMG_4487](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4487.PNG)
+![IMG_4489](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4489.PNG)
+![IMG_4490](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4490.PNG)
+![IMG_4491](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4491.PNG)
+![IMG_4492](https://github.com/jihohyeseong/SBS/blob/ios/screenshots/IMG_4492.PNG)
 
 <li>로그안</li>
 
