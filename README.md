@@ -45,6 +45,63 @@ HSU 2024 Capstone Project
 + 온라인 e북을 이용할 때 text-to-speach ai를 활용하여 회원에게 책을 읽어준다.
 
 <br/>
+## 📌 기술 스택
+<div>
+<table>
+   <tr>
+      <td colspan="2" align="center">
+        Language
+      </td>
+      <td colspan="4">
+        <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
+        <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+      </td>
+   </tr>
+   <tr>
+      <td colspan="2" align="center">
+        Library & Framework
+      </td>
+      <td colspan="4">
+        <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> 
+        <img src="https://img.shields.io/badge/react kakao map sdk-F7E600?style=for-the-badge&logo=react&logoColor=black">
+        <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
+        <img src="https://img.shields.io/badge/spring data jpa-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
+        <img src="https://img.shields.io/badge/spring security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white"> 
+        <img src="https://img.shields.io/badge/QueryDSL-0088D7?style=for-the-badge&logoColor=white"> 
+        <img src="https://img.shields.io/badge/amazon ec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"> 
+        <img src="https://img.shields.io/badge/amazon s3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"> 
+      </td>
+   </tr>
+   <tr>
+      <td colspan="2" align="center">
+        Database
+      </td>
+      <td colspan="4">
+        <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+        <img src="https://img.shields.io/badge/amazon rds-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white">
+      </td>
+   </tr>
+   <tr>
+      <td colspan="2" align="center">
+        Tool
+      </td>
+      <td colspan="4">
+          <img src="https://img.shields.io/badge/intellijidea-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
+          <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+      </td>
+   </tr>
+   <tr>
+      <td colspan="2" align="center">
+        etc.
+      </td>
+      <td colspan="4">
+          <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+          <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+      </td>
+   </tr>
+</table>
+</div>
+<br/>
 
 ## 프로젝트 구조
 ![프로젝트 구조](https://github.com/jihohyeseong/SBS/blob/main/image/27%EC%A1%B0_%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%A3%BC%EC%9A%94%20%EC%A0%81%EC%9A%A9%20%EA%B8%B0%EC%88%A0%20%EB%B0%8F%20%EA%B5%AC%EC%A1%B0.jpg)
