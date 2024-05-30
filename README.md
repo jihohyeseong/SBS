@@ -161,7 +161,35 @@ HSU 2024 Capstone Project
 
 
 ### IOS 앱 화면(하은옥)
-구현중
+<li>회원가입</li>
+![IMG_4480](https://github.com/jihohyeseong/SBS/assets/93129991/154325bb-2695-4be6-8d27-9156eef0ba5f)
+
+<li>로그안</li>
+![IMG_4481](https://github.com/jihohyeseong/SBS/assets/93129991/3a89537d-f821-4e13-9c9f-44a1a3f0d898)
+
+<li>메인페이지</li>
+![IMG_4482](https://github.com/jihohyeseong/SBS/assets/93129991/1e9f6555-43f4-4f7f-94e0-8fe4e9978e83)
+<li>세부정보</li>
+![IMG_4483](https://github.com/jihohyeseong/SBS/assets/93129991/ed60d077-c2ab-495e-847a-9fcb2672d9d9)
+
+<li>댓글</li>
+![IMG_4485](https://github.com/jihohyeseong/SBS/assets/93129991/1273bf97-77d3-4c59-9dc1-64ae75735ea1)
+
+<li>책정렬</li>
+![IMG_4486](https://github.com/jihohyeseong/SBS/assets/93129991/6ac04aef-f092-413c-85d9-8d78c76c8bd6)
+![IMG_4487](https://github.com/jihohyeseong/SBS/assets/93129991/61901c79-a59a-46d7-932f-b65e7b6b00c0)
+
+<li>장바구니</li>
+![IMG_4489](https://github.com/jihohyeseong/SBS/assets/93129991/0efbc5cd-74ac-43e5-abd8-1d742ed362f9)
+
+<li>카카오페이</li>
+![IMG_4490](https://github.com/jihohyeseong/SBS/assets/93129991/85180fb6-79c5-4160-8f90-a26524952835)
+
+<li>마이페이지</li>
+![IMG_4491](https://github.com/jihohyeseong/SBS/assets/93129991/b22b7ed4-bc4f-4d1c-b655-ee2f8ce7c851)
+
+<li>AI댓글요약</li>
+![IMG_4492](https://github.com/jihohyeseong/SBS/assets/93129991/ad0cee50-9ca9-42c4-828c-a89b3378e982)
 <br/>
 
 
