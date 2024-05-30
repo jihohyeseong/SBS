@@ -1,7 +1,8 @@
 # SBS Online Bookmarket
 HSU 2024 Capstone Project
 <h3><a href="https://shine-territory-e9e.notion.site/07680bdd72944508869fd49ae3224925?v=37539025f336409d958e9d0d0f73cffe">
-      📜 REST API 명세서</a></h3>
+      📜 REST API 명세서</a> | <a href="https://github.com/jihohyeseong/SBS/blob/main/image/%EC%B5%9C%EC%A2%85%EA%B8%B0%EB%8A%A5%EA%B5%AC%EC%84%B1%EB%8F%84.png">
+      📖 기능구성도</a></h3>
 
 ## 목차
 <details open>
@@ -39,9 +40,6 @@ HSU 2024 Capstone Project
 
 ## 프로젝트 구조
 ![프로젝트 구조](https://github.com/jihohyeseong/SBS/blob/main/image/27%EC%A1%B0_%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%A3%BC%EC%9A%94%20%EC%A0%81%EC%9A%A9%20%EA%B8%B0%EC%88%A0%20%EB%B0%8F%20%EA%B5%AC%EC%A1%B0.jpg)
-
-## 기능구성도
-![기능구성도](https://github.com/jihohyeseong/SBS/blob/main/image/%EB%8F%84%EC%84%9C%EC%87%BC%ED%95%91%EB%AA%B0%EA%B8%B0%EB%8A%A5%EA%B5%AC%EC%84%B1%EB%8F%84%20(1).png)
 
 ## 구현화면
 
