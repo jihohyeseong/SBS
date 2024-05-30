@@ -96,7 +96,6 @@ HSU 2024 Capstone Project
         etc.
       </td>
       <td colspan="4">
-          <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
           <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
       </td>
    </tr>
