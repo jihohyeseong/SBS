@@ -65,13 +65,10 @@ HSU 2024 Capstone Project
       </td>
       <td colspan="4">
         <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> 
-        <img src="https://img.shields.io/badge/react kakao map sdk-F7E600?style=for-the-badge&logo=react&logoColor=black">
         <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
         <img src="https://img.shields.io/badge/spring data jpa-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
         <img src="https://img.shields.io/badge/spring security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white"> 
-        <img src="https://img.shields.io/badge/QueryDSL-0088D7?style=for-the-badge&logoColor=white"> 
         <img src="https://img.shields.io/badge/amazon ec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"> 
-        <img src="https://img.shields.io/badge/amazon s3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"> 
       </td>
    </tr>
    <tr>
