@@ -45,6 +45,7 @@ HSU 2024 Capstone Project
 + 온라인 e북을 이용할 때 text-to-speach ai를 활용하여 회원에게 책을 읽어준다.
 
 <br/>
+
 ## 📌 기술 스택
 <div>
 <table>
