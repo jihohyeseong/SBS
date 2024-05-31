@@ -272,7 +272,7 @@ HSU 2024 Capstone Project
 <br/>
 
 ### 캡스톤 당일 단체 사진
-<img src="https://github.com/jihohyeseong/SBS/blob/ios/IMG_4502.png" width="300">
+<img src="https://github.com/jihohyeseong/SBS/blob/ios/IMG_4502.png">
 
 <br/>
 
