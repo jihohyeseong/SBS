@@ -18,7 +18,7 @@ import java.util.Map;
 public class KakaoPayService {
 
     static final String cid = "TC0ONETIME"; // 가맹점 테스트 코드
-    static final String admin_Key = "DEVB441AED22C91C0F24459E8D6EDB295FD44A88"; // 공개 조심! 본인 애플리케이션의 어드민 키를 넣어주세요
+    static final String admin_Key = ${}; // 공개 조심! 본인 애플리케이션의 어드민 키를 넣어주세요
     private KakaoReadyResponse kakaoReady;
 
     public KakaoReadyResponse kakaoPayReady(List<CartDto> cartDto, String username){
