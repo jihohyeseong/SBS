@@ -160,6 +160,7 @@ HSU 2024 Capstone Project
 <summary> ▶️ Click! </summary>
 <ul>
     <li>회원가입</li>
+      <img src="https://github.com/jihohyeseong/SBS/assets/113437469/f57de2ef-7b9d-4459-8fe6-8343fa7c6fe7" width="300">
        (https://github.com/jihohyeseong/SBS/assets/113437469/f57de2ef-7b9d-4459-8fe6-8343fa7c6fe7)
     <li>로그인</li>
        (https://github.com/jihohyeseong/SBS/assets/113437469/3e74f72c-e4ba-4c22-8d48-7c542fc54082)
