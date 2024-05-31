@@ -17,7 +17,7 @@ HSU 2024 Capstone Project
     <li><a href="#구현화면">구현화면</a></li>
     <ul>
       <li><a href="#웹화면이혜성-송승엽">웹 화면</a></li>
-      <li><a href="#안드로이드-앱-화면나찬웅">[안드로이드 앱 화면]</a></li>
+      <li><a href="#안드로이드-앱-화면나찬웅">안드로이드 앱 화면</a></li>
       <li><a href="#ios-앱-화면하은옥">IOS 앱 화면</a></li>
     </ul>
     <li><a href="#비교표">비교표</a></li>
@@ -36,7 +36,7 @@ HSU 2024 Capstone Project
 + **이혜성**: 팀장, Backend Spring담당
 + **송승엽**: 반응형 React담당 [🖥️[PC화면 시연동영상](https://www.youtube.com/watch?v=-A_0slTbHPo)] | [📱[모바일화면 시연동영상](https://www.youtube.com/watch?v=hej5DR7b_rE&t=1s)]
 + **하은옥**: ios Application담당 [🍎[아이폰 시연동영상](https://youtu.be/3zi91k0oNSo)]
-+ **나찬웅**: android Application담당 [안드로이드 시연동영상](https://youtu.be/pbTjzjy7YgM)
++ **나찬웅**: android Application담당 [[안드로이드 시연동영상](https://youtu.be/pbTjzjy7YgM)]
 <br/>
 <br/>
 
