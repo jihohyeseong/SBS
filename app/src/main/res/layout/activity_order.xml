@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="#"
+            android:text="가격"
             android:textColor="#E57373"
             android:textSize="13sp"
             android:textStyle="bold" />
@@ -125,7 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="가격"
+            android:text="주문수량"
             android:textColor="#E57373"
             android:textSize="13sp"
             android:textStyle="bold" />
@@ -202,7 +202,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="주문완료" />
+            android:text="결제" />
     </LinearLayout>
 
 

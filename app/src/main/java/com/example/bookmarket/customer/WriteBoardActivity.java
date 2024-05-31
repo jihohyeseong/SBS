@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -13,9 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bookmarket.R;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
 
 import java.io.IOException;
 
@@ -44,27 +40,21 @@ public class WriteBoardActivity extends AppCompatActivity {
         btInsertObj = findViewById(R.id.buttonInsert);
         btCancelObj = findViewById(R.id.buttonCancel);
 
-        btInsertObj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SharedPreferences pref  = getSharedPreferences("prefile", Context.MODE_PRIVATE);
-                String useId = pref.getString("id", null);
-                writeBoard(useId);
-            }
+        btInsertObj.setOnClickListener(view -> {
+            SharedPreferences pref  = getSharedPreferences("prefile", Context.MODE_PRIVATE);
+            String useId = pref.getString("id", null);
+            writeBoard(useId);
         });
 
-        btInsertObj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), BoardActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        btInsertObj.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), BoardActivity.class);
+            startActivity(intent);
+            finish();
         });
 
     }
     void  writeBoard( String useId){
-        String url = "http://androidbook.dothome.co.kr/insertBoard.php";
+        String url = "http://localhost/insertBoard.php";
 
         RequestBody requestBody = new FormBody.Builder()
                 .add("id", useId.toString())

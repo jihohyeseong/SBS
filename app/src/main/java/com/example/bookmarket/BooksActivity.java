@@ -2,213 +2,330 @@ package com.example.bookmarket;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
 
-import com.example.bookmarket.model.CartRepository;
+import com.example.bookmarket.dto.BookDto;
+import com.example.bookmarket.model.Book;
+import com.example.bookmarket.mypage.MyPageActivity;
+import com.example.bookmarket.video.VideoActivity;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class BooksActivity extends AppCompatActivity {
-    public static CartRepository cartRepositoryObj;
 
-    ImageView colume1Obj;
-    ImageView colume2Obj;
+    private RecyclerView recyclerView;
+    private BookAdapter bookAdapter;
+    private List<Book> bookList = new ArrayList<>();
 
-    LinearLayout layout1Obj;
-    LinearLayout layout2Obj;
+    private BookDto dto;
 
-    ImageView book11Obj;
-    ImageView book12Obj;
-    ImageView book13Obj;
-    ImageView book14Obj;
-    ImageView book21Obj;
-    ImageView book22Obj;
-    ImageView book23Obj;
-    ImageView book24Obj;
-
-
-
+    // 버튼 객체 선언
+    private Button buttonAddBook;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_books);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 화살표(<-) 표시하기
+        recyclerView = findViewById(R.id.recyclerViewBooks);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        colume1Obj = findViewById(R.id.books_iv02);
-        colume2Obj = findViewById(R.id.books_iv03);
-        layout1Obj = findViewById(R.id.list_layout01);
-        layout2Obj = findViewById(R.id.list_layout02);
+        // Retrofit 객체 생성
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://52.79.46.118:8080/") // API의 기본 URL
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
 
-        book11Obj = findViewById(R.id.bookscol1_iv01); // 1열 도서 목록의 이미지 뷰 아이디를 저장할 변수
-        book12Obj = findViewById(R.id.bookscol1_iv02);
-        book13Obj = findViewById(R.id.bookscol1_iv03);
-        book14Obj = findViewById(R.id.bookscol1_iv04);
+        // MyApiService 인터페이스 구현체 생성
+        MyApiService apiService = retrofit.create(MyApiService.class);
 
-        book21Obj = findViewById(R.id.bookscol2_iv01); // 2열 도서 목록의 이미지 뷰 아이디를 저장할 변수
-        book22Obj = findViewById(R.id.bookscol2_iv02);
-        book23Obj = findViewById(R.id.bookscol2_iv03);
-        book24Obj = findViewById(R.id.bookscol2_iv04);
+        List<Book> bookList = new ArrayList<>();
 
-        // 1열 이미지 뷰 클릭 이벤트 추리
-        book11Obj.setOnClickListener(v -> {
-            //Toast.makeText(getApplicationContext(),"자바 코딩의 기술",Toast.LENGTH_LONG).show();
-            BookItem1();
+        // 도서 목록 요청
+        Call<List<Book>> call = apiService.index();
+        call.enqueue(new Callback<List<Book>>() {
+            @Override
+            public void onResponse(Call<List<Book>> call, Response<List<Book>> response) {
+                if (response.isSuccessful()) {
+                    List<Book>books  = response.body();
+                    bookList.addAll(books);  // 먼저 데이터를 리스트에 추가
+                    // 수정된 코드
+                    bookAdapter = new BookAdapter(BooksActivity.this, bookList);
+                    recyclerView.setAdapter(bookAdapter);
+                    Log.e("POST", "성공");
+                } else {
+                    // API 호출은 성공했지만 데이터가 올바르지 않은 경우 처리
+                    Log.e("POST", "데이터가 올바르지 않음");
+                }
+            }
+            @Override
+            public void onFailure(Call<List<Book>> call, Throwable t) {
+                // API 호출 실패 시 처리
+                Log.e("API", "호출 실패");
+            }
         });
 
-        book12Obj.setOnClickListener(v -> {
-            //Toast.makeText(getApplicationContext(),"머신 러닝을 다루는 기술",Toast.LENGTH_LONG).show();
-            BookItem2();
-        });
-        book13Obj.setOnClickListener(v -> {
-            //Toast.makeText(getApplicationContext(),"모던 리눅스 관리",Toast.LENGTH_LONG).show();
-            BookItem3();
-        });
-        book14Obj.setOnClickListener(v -> {
-            //Toast.makeText(getApplicationContext(),"유니티 교과서",Toast.LENGTH_LONG).show();
-            BookItem4();
-        });
-        // 2열 이미지 뷰 클릭 이벤트 추리
-        book21Obj.setOnClickListener(v -> {
-            //Toast.makeText(getApplicationContext(),"자바 코딩의 기술",Toast.LENGTH_LONG).show();
-            BookItem1();
-        });
-        book22Obj.setOnClickListener(v -> {
-            //Toast.makeText(getApplicationContext(),"머신 러닝을 다루는 기술",Toast.LENGTH_LONG).show();
-            BookItem2();
-        });
-        book23Obj.setOnClickListener(v -> {
-            //Toast.makeText(getApplicationContext(),"모던 리눅스 관리",Toast.LENGTH_LONG).show();
-            BookItem3();
-        });
-        book24Obj.setOnClickListener(v -> {
-            //Toast.makeText(getApplicationContext(),"유니티 교과서",Toast.LENGTH_LONG).show();
-            BookItem4();
-        });
-    }
 
-    public void onBookViewClick(View view){
-        switch(view.getId()){
-            case R.id.books_iv02: // 1열 도서 목록 보기 버튼 (1X4)
-                colume1Obj.setImageResource(R.drawable.list_type1);
-                colume2Obj.setImageResource(R.drawable.list_type22);
-                layout1Obj.setVisibility(View.VISIBLE); // 1열 도서 목록 레이아웃 보이기
-                layout2Obj.setVisibility(View.INVISIBLE); // 2열 도서 목록 레이아웃 감추기
-                break;
+        Toolbar toolbar = findViewById(R.id.toolbar); // toolbar 아이디 확인 필요
+        setSupportActionBar(toolbar);
 
-            case R.id.books_iv03: // 2열 도서 목록 보기 버튼 (2X2)
-                colume1Obj.setImageResource(R.drawable.list_type12);
-                colume2Obj.setImageResource(R.drawable.list_type2);
-                layout1Obj.setVisibility(View.INVISIBLE); // 1열 도서 목록 레이아웃 보이기
-                layout2Obj.setVisibility(View.VISIBLE); // 2열 도서 목록 레이아웃 감추기
-                break;
+        // ActionBar 가져오기
+        ActionBar actionBar = getSupportActionBar();
+
+        // ActionBar가 null인지 확인
+        if (actionBar != null) {
+            // 홈 버튼을 활성화하고, 클릭 시 뒤로 가기 기능을 수행하도록 설정
+            actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+            GestureDetector gestureDetector = new GestureDetector(BooksActivity.this, new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+            });
+
+            @Override
+            public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
+                View childView = rv.findChildViewUnder(e.getX(), e.getY());
+                if (childView != null && gestureDetector.onTouchEvent(e)) {
+                    int position = rv.getChildAdapterPosition(childView);
+                    Book selectedBook = bookList.get(position);
+                    // 선택된 도서의 정보를 다음 화면으로 전달하는 메소드 호출
+                    showBookDetail(selectedBook);
+                    return true;
+                }
+                return false;
+            }
+
+            @Override
+            public void onTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
+            }
+
+            @Override
+            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+            }
+        });
+
+
+
+        buttonAddBook = findViewById(R.id.buttonAdd);
+        // 버튼 클릭 이벤트 처리
+        buttonAddBook.setOnClickListener(v -> {
+            // 도서 등록 다이얼로그 표시
+            showAddBookDialog();
+        });
     }
 
-    public void BookItem1(){
-        Intent intent  = new Intent(this, BookActivity.class);
-        intent.putExtra("bookid", "BOOK1234");
-        intent.putExtra("name", "자바 코딩의 기술");
-        intent.putExtra("price", "22000");
-        intent.putExtra("date", "2020-07-30");
-        intent.putExtra("writer", "사이먼 하러,리누스 디에츠,요르그 레너드/심지현");
-        intent.putExtra("page", "264쪽");
-        intent.putExtra("description", "코딩 스킬을 개선하는 가장 좋은 방법은 전문가의 코드를 읽는 것이다. 오픈 소스 코드를 읽으면서 이해하면 좋지만, 너무 방대하고 스스로 맥락을 찾는 게 어려울 수 있다. 그럴 땐 이 책처럼 현장에서 자주 발견되는 문제 유형 70가지와 해법을 비교하면서 자신의 코드에서 개선할 점을 찾는 것이 좋다.");
-        intent.putExtra("category", "프로그래밍/오픈소스");
+    // 도서 등록
+    private void showAddBookDialog() {
+        // 여기에 도서 등록 다이얼로그를 표시하는 코드 작성
+        BookDialogFragment dialog = new BookDialogFragment();
+        dialog.show(getSupportFragmentManager(), "AddBookDialogFragment");
+    }
+
+    // 도서 수정
+    private void showEditBookDialog(Book book) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.dialog_edit_book, null);
+
+        EditText BookAuthor = view.findViewById(R.id.author);
+        EditText BookPublisher = view.findViewById(R.id.publisher);
+        EditText BookPrice = view.findViewById(R.id.price);
+        EditText BookCategory = view.findViewById(R.id.category);
+        EditText BookName = view.findViewById(R.id.book_name);
+        EditText BookDescription = view.findViewById(R.id.description);
+        EditText BookBuyNum = view.findViewById(R.id.buy_num);
+        EditText BookReleaseDate = view.findViewById(R.id.release_date);
+        EditText BookImageUrl = view.findViewById(R.id.image_url);
+        EditText BookUnitsInStock = view.findViewById(R.id.units_in_stock);
+
+
+        // 수정 다이얼로그에 기존 도서 정보를 표시
+        BookAuthor.setText(book.getAuthor());
+        BookPublisher.setText(book.getPublisher());
+        BookPrice.setText(String.valueOf(book.getPrice()));
+        BookCategory.setText(book.getCategory());
+        BookName.setText(book.getBookName());
+        BookDescription.setText(book.getDescription());
+        BookBuyNum.setText(String.valueOf(book.getBuy_num()));
+        BookReleaseDate.setText(book.getRelease_date());
+        BookImageUrl.setText(book.getImage_url());
+        BookUnitsInStock.setText(String.valueOf(book.getUnits_in_stock()));
+
+
+        builder.setView(view)
+                .setTitle("도서 수정")
+                .setPositiveButton("저장", (dialog, which) -> {
+                    // 수정된 도서 정보를 가져와서 서버로 업데이트하는 메소드 호출
+                    String updatedAuthor = BookAuthor.getText().toString().trim();
+                    String updatedPublisher = BookPublisher.getText().toString().trim();
+                    Long updatedPrice = Long.valueOf(BookPrice.getText().toString().trim());
+                    String updatedCategory = BookCategory.getText().toString().trim();
+                    String updatedBookName = BookName.getText().toString().trim();
+                    String updatedDescription = BookDescription.getText().toString().trim();
+                    Long updatedBuyNum = Long.valueOf(BookBuyNum.getText().toString().trim());
+                    String updatedReleaseDate = BookReleaseDate.getText().toString().trim();
+                    String updatedImageUrl = BookImageUrl.getText().toString().trim();
+                    Long updatedUnitsInStock = Long.valueOf(BookUnitsInStock.getText().toString().trim());
+
+                    // 나머지 수정된 도서 정보도 가져와서 변수에 저장하세요...
+                    updateBook(dto.getId(), updatedAuthor, updatedPublisher, updatedPrice, updatedDescription, updatedBookName, updatedBuyNum, updatedCategory, updatedReleaseDate, updatedImageUrl, updatedUnitsInStock);
+                })
+                .setNegativeButton("취소", (dialog, which) -> {
+                    dialog.dismiss();
+                });
+
+        builder.create().show();
+    }
+
+    // 도서 삭제 다이얼로그를 표시하는 메소드
+    private void showDeleteBookDialog(Book book) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("도서 삭제")
+                .setMessage(book.getBookName() + "을(를) 삭제하시겠습니까?")
+                .setPositiveButton("삭제", (dialog, which) -> {
+                    deleteBook(book.getId());
+                })
+                .setNegativeButton("취소", (dialog, which) -> {
+                    dialog.dismiss();
+                });
+
+        builder.create().show();
+    }
+
+    // 도서를 서버에서 업데이트하는 메소드
+    private void updateBook(Long id, String author, String publisher, Long price, String description, String bookname, Long buy_num, String category, String releasedate, String imageurl, Long unitsinstock) {
+        // Retrofit을 사용하여 서버에 도서 정보를 업데이트하는 요청 생성
+        MyApiService apiService = RetrofitClient.getRetrofitInstance().create(MyApiService.class);
+
+        // BookDto 객체 생성 및 설정
+        BookDto bookDto = new BookDto(id, author, publisher, price, description, bookname, buy_num, category, releasedate, imageurl, unitsinstock);
+
+        // 서버에 업데이트 요청
+        Call<Book> call = apiService.updateBook(id, bookDto);
+        call.enqueue(new Callback<Book>() {
+            @Override
+            public void onResponse(Call<Book> call, Response<Book> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(BooksActivity.this, "도서가 성공적으로 업데이트되었습니다.", Toast.LENGTH_SHORT).show();
+                    // 업데이트가 성공하면 도서 목록을 다시 요청하여 업데이트된 목록으로 갱신
+                } else {
+                    Toast.makeText(BooksActivity.this, "도서 업데이트에 실패했습니다.", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Book> call, Throwable t) {
+                Toast.makeText(BooksActivity.this, "도서 업데이트 요청 실패: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    // 도서를 서버에서 삭제하는 메소드
+    private void deleteBook(Long id) {
+        // Retrofit을 사용하여 서버에서 도서를 삭제하는 요청 생성
+        MyApiService apiService = RetrofitClient.getRetrofitInstance().create(MyApiService.class);
+        Call<Void> call = apiService.deleteBook(id);
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(BooksActivity.this, "도서가 성공적으로 삭제되었습니다.", Toast.LENGTH_SHORT).show();
+                    // 삭제가 성공하면 도서 목록을 다시 요청하여 갱신
+                } else {
+                    Toast.makeText(BooksActivity.this, "도서 삭제에 실패했습니다.", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                Toast.makeText(BooksActivity.this, "도서 삭제 요청 실패: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void showBookDetail(Book selectedBook) {
+        Intent intent = new Intent(this, BookActivity.class);
+        intent.putExtra("selectedBook", selectedBook);
         startActivity(intent);
     }
 
-    public void BookItem2(){
-        Intent intent  = new Intent(this, BookActivity.class);
-        intent.putExtra("bookid", "BOOK1235");
-        intent.putExtra("name", "머신 러닝을 다루는 기술 with 파이썬, 사이킷런");
-        intent.putExtra("price", "34000");
-        intent.putExtra("date", "2020-06-3");
-        intent.putExtra("writer", "마크 페너/황준식");
-        intent.putExtra("page", "624쪽");
-        intent.putExtra("description", " 저자는 오랫동안 다양한 사람들에게 머신 러닝을 가르치면서 효과적인 학습 방법을 고안했고, 그대로 책에 담았다. 이 책은 그림과 스토리로 개념을 설명하고 바로 파이썬 코드로 구현하는 것에서 시작한다. 수학적 증명을 깊게 파고들거나 개념을 설명하기 위해 수식에 의존하지 않으며, 필요한 수학은 고등학교 수준으로 그때마다 첨가하여 설명한다. 또한, 바닥부터 모델을 구현하지 않고, 넘파이, 판다스, 사이킷런처럼 잘 구현된 강력한 파이썬 라이브러리를 사용해 실용적으로 접근한다. 개념과 기술을 잘 보여주는 양질의 예제를 직접 실행하며 머신 러닝 개념을 이해할 수 있다. ");
-        intent.putExtra("category", "데이터베이스/데이터분석");
-        startActivity(intent);
-    }
 
-    public void BookItem3(){
-        Intent intent  = new Intent(this, BookActivity.class);
-        intent.putExtra("bookid", "BOOK1236");
-        intent.putExtra("name", "모던 리눅스 관리");
-        intent.putExtra("price", "30000");
-        intent.putExtra("date", "2019-10-10");
-        intent.putExtra("writer", "데이비드 클린턴(David Cliton)/강석주");
-        intent.putExtra("page", "472쪽");
-        intent.putExtra("description", "이 책은 최신 기술을 활용한 리눅스 관리 방법을 가상화, 연결, 암호화, 네트워킹, 이미지관리, 시스템 모니터링의 6가지 주제로 나눠 설명한다. 가상 머신에 리눅스를 설치하고 서버를 구축하는 방법뿐만 아니라 구축 이후에 리눅스를 관리하고 운영하며 겪을수 있는 다양한 문제를 해결하는 방법까지 다룬다. VM과 컨테이너를 이용한 가상화, AWS S3를 이용한 데이터 백업, Nextcloud를 이용한 파일공유 서버 구축, 앤서블을 이용한 데브옵스 환경 구축 등 최신 기술을 활용한 실용적인 12가지 프로젝트로 실무에 필요한 리눅스 관리 방법을 배울 수 있다.");
-        intent.putExtra("category", "임베디드/시스템/네트워크");
-        startActivity(intent);
-    }
-
-    public void BookItem4(){
-        Intent intent  = new Intent(this, BookActivity.class);
-        intent.putExtra("bookid", "BOOK1237");
-        intent.putExtra("name", "유니티 교과서");
-        intent.putExtra("price", "28000");
-        intent.putExtra("date", "2019-10-30");
-        intent.putExtra("writer", "기타무라 마나미/김은철,유세라");
-        intent.putExtra("page", "456쪽");
-        intent.putExtra("description", "[유니티 교과서, 개정 3판]은 유니티를 사용해 2D/3D 게임과 애니메이션을 만들면서 유니티 기초 지식과 함께 게임 제작 흐름을 익히는 것을 목적으로 한다. 유니티를 설치한 후 C# 핵심 문법을 학습하고, 이어서 여섯 가지 2D/3D 게임을 ‘게임 설계하기 → 프로젝트와 씬 만들기 → 씬에 오브젝트 배치하기 → 스크립트 작성하기 → 스크립트 적용하기’ 단계로 만들어 보면서 게임 제작 흐름을 익힌다. ");
-        intent.putExtra("category", "게임");
-        startActivity(intent);
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_books, menu); // 메뉴파일 등록
+        inflater.inflate(R.menu.menu_books, menu);
         MenuItem searchItem = menu.findItem(R.id.menu_search);
-        // 옵션 메뉴 파일에서 검색하기 메뉴 가져오기
-
-
-        //SearchView searchView = (SearchView) searchItem.getActionView();
-        androidx.appcompat.widget.SearchView searchView = (androidx.appcompat.widget.SearchView) searchItem.getActionView();
+        SearchView searchView = (SearchView) searchItem.getActionView();
         searchView.setQueryHint("검색어(도서명)을 입력해주세요.");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            // 검색하기 액션 버튼 이벤트 처리
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Toast.makeText(getApplicationContext(),query,Toast.LENGTH_LONG).show();
-                return false;
+                bookAdapter.filterBooks(query);
+                return true;
             }
+
             @Override
             public boolean onQueryTextChange(String newText) {
-                return false;
+                bookAdapter.filterBooks(newText);
+                return true;
             }
         });
-
-        return super.onCreateOptionsMenu(menu);
+        return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case android.R.id.home : // 화살표(<-) 클릭 시 이전 액티비티(화면)로 이동하기
+            case android.R.id.home: // 화살표(<-) 클릭 시 이전 액티비티(화면)로 이동하기
                 onBackPressed();
                 break;
-            case R.id.menu_home  :
-                Toast.makeText(getApplicationContext(),"홈으로 메뉴가 클릭되었습니다",Toast.LENGTH_LONG).show();
+            case R.id.menu_home:
+                Intent homeintent = new Intent(this, MainActivity.class);
+                startActivity(homeintent);
                 break;
-            case R.id.main_video   :
-                Toast.makeText(getApplicationContext(),"동영상강좌 메뉴가 클릭되었습니다",Toast.LENGTH_LONG).show();
+            case R.id.main_video:
+                Intent videointent = new Intent(this, VideoActivity.class);
+                startActivity(videointent);
                 break;
-            case R.id.menu_customer  :
-                Toast.makeText(getApplicationContext(),"고객센터 메뉴가 클릭되었습니다",Toast.LENGTH_LONG).show();
-                break;
-            case R.id.menu_mypage :
-                Toast.makeText(getApplicationContext(),"마이페이지 메뉴가 클릭되었습니다",Toast.LENGTH_LONG).show();
+            case R.id.menu_mypage:
+                Intent mypageintent = new Intent(this, MyPageActivity.class);
+                startActivity(mypageintent);
                 break;
         }
         return super.onOptionsItemSelected(item);

@@ -6,14 +6,22 @@
         android:title="로그인"/>
     <item
         android:id="@+id/menu02"
-        android:icon="@drawable/menu_icon_setting"
-        android:title="환경설정"/>
-    <item
-        android:id="@+id/menu03"
         android:icon="@drawable/menu_icon_myinfo"
         android:title="나의 정보"/>
     <item
+        android:id="@+id/menu03"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="도서관리" />
+    <item
         android:id="@+id/menu04"
+        android:icon="@drawable/booksearch"
+        android:title="도서랭킹" />
+    <item
+        android:id="@+id/menu05"
+        android:icon="@drawable/baseline_book_online_24"
+        android:title="신간도서" />
+    <item
+        android:id="@+id/menu06"
         android:icon="@drawable/menu_icon_join"
         android:title="회원가입" />
 </menu>

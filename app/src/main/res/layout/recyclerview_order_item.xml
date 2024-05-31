@@ -12,34 +12,42 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="title"
-        android:textColor="@android:color/black"
-        android:textSize="13sp" />
+        android:textColor="#03A9F4"
+        android:textSize="13sp"
+        android:maxLines="2"
+        android:ellipsize="end" />
 
     <TextView
         android:id="@+id/price"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="price"
-        android:textColor="@android:color/black"
-        android:textSize="13sp" />
+        android:textColor="#03A9F4"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:ellipsize="end" />
 
     <TextView
         android:id="@+id/quantity"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="quantity" />
+        android:text="quantity"
+        android:singleLine="true"
+        android:ellipsize="end" />
 
     <TextView
         android:id="@+id/sum"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="sum" />
+        android:text="sum"
+        android:singleLine="true"
+        android:ellipsize="end" />
 
 </LinearLayout>

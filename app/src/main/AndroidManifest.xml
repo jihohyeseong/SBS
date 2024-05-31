@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
     tools:ignore="CoarseFineLocation"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -13,9 +14,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppBaseTheme"
+        android:theme="@style/Theme.BookMarket"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        android:enableOnBackInvokedCallback="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="34">
+
         <activity android:name=".IntroActivity"
             android:exported="true">
             <intent-filter>
@@ -24,9 +28,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:theme="@style/AppBaseTheme"
+        <activity android:theme="@style/Theme.BookMarket"
             android:name=".MainActivity"
-            android:label=""/>
+            android:label="@string/app_name"/>
 
         <activity android:theme="@style/Theme.BookMarket"
             android:label="도서목록"
@@ -34,6 +38,16 @@
         <activity android:theme="@style/Theme.BookMarket"
             android:label="도서상세정보"
             android:name=".BookActivity"/>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:label="도서관리"
+            android:name=".subActivity"/>
+        <activity android:name=".RankingActivity">
+        </activity>
+        <activity android:name=".NewBookActivity">
+        </activity>
+        <activity android:theme="@style/Theme.BookMarket"
+            android:name=".cart.CartActivity"
+            android:label="장바구니" />
         <activity android:theme="@style/Theme.BookMarket"
             android:label="배송정보"
             android:name=".order.ShippingActivity"/>
@@ -43,9 +57,6 @@
         <activity android:theme="@style/Theme.BookMarket"
             android:label="나의 페이지"
             android:name=".mypage.MyPageActivity"/>
-        <activity android:theme="@style/Theme.BookMarket"
-            android:label="메모장"
-            android:name=".mypage.MemoActivity"/>
         <activity android:theme="@style/Theme.BookMarket"
             android:label="동영상강좌"
             android:name=".video.VideoActivity"/>
@@ -72,6 +83,19 @@
             android:name=".customer.DetailBoardActivity"
             android:label="상세보기"
             android:theme="@style/Theme.BookMarket" />
+
+        <activity android:name=".PaymentCompleteActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- 이 부분에 주의: 여기에 카카오페이 리디렉션 URI를 설정 -->
+                <data android:scheme="bookmarket" android:host="payment-success" />
+            </intent-filter>
+        </activity>
 
 
         <provider

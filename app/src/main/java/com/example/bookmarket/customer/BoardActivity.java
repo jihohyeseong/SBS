@@ -3,27 +3,19 @@ package com.example.bookmarket.customer;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.ListView;
-import android.widget.SearchView;
-import android.widget.SimpleAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bookmarket.R;
-import com.example.bookmarket.cart.CartAdapter;
-import com.example.bookmarket.mypage.MemoActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,7 +23,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -50,19 +41,22 @@ public class BoardActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 화살표(<-) 표시하기
+        // ActionBar 가져오기
+        ActionBar actionBar = getSupportActionBar();
+        // ActionBar가 null인지 확인
+        if (actionBar != null) {
+            // 홈 버튼을 활성화하고, 클릭 시 뒤로 가기 기능을 수행하도록 설정
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
        btWriteObj = findViewById(R.id.writeButton);
-        btWriteObj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SharedPreferences pref = getSharedPreferences("prefile", Context.MODE_PRIVATE);
-                String useId = pref.getString("id", null);
-                if (useId==null) Toast.makeText(getApplicationContext(), "로그인해 주세요" , Toast.LENGTH_SHORT).show();
-                else {
-                    Intent intent = new Intent(getApplicationContext(), WriteBoardActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
+        btWriteObj.setOnClickListener(view -> {
+            SharedPreferences pref = getSharedPreferences("prefile", Context.MODE_PRIVATE);
+            String useId = pref.getString("id", null);
+            if (useId==null) Toast.makeText(getApplicationContext(), "로그인해 주세요" , Toast.LENGTH_SHORT).show();
+            else {
+                Intent intent = new Intent(getApplicationContext(), WriteBoardActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -71,17 +65,14 @@ public class BoardActivity  extends AppCompatActivity {
         listview.setAdapter(adapter);
         itemListJson();
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                MyItem itemValue = (MyItem) adapterView.getItemAtPosition(i);
-                Intent intent = new Intent(getApplicationContext(), DetailBoardActivity.class);
-                intent.putExtra("title", itemValue.title);
-                intent.putExtra("userid", itemValue.id);
-                intent.putExtra("content", itemValue.content);
-                intent.putExtra("date", itemValue.date);
-                startActivity(intent);
-            }
+        listview.setOnItemClickListener((adapterView, view, i, l) -> {
+            MyItem itemValue = (MyItem) adapterView.getItemAtPosition(i);
+            Intent intent = new Intent(getApplicationContext(), DetailBoardActivity.class);
+            intent.putExtra("title", itemValue.title);
+            intent.putExtra("userid", itemValue.id);
+            intent.putExtra("content", itemValue.content);
+            intent.putExtra("date", itemValue.date);
+            startActivity(intent);
         });
 
 
@@ -90,7 +81,7 @@ public class BoardActivity  extends AppCompatActivity {
 
     void itemListJson() { // 웹 서버 연동
 
-        String url = "http://androidbook.dothome.co.kr/selectBoard.php";
+        String url = "http://localhost/selectBoard.php";
 
         Request request = new Request.Builder()
                 .url(url)

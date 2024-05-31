@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="저자" />
+    <EditText
+        android:id="@+id/book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="도서 이름" />
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="카테고리" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="가격" />
+
+    <EditText
+        android:id="@+id/description"
+        android:lines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="설명" />
+
+    <EditText
+        android:id="@+id/publisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="출판사" />
+
+    <EditText
+        android:id="@+id/release_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="출시일" />
+
+    <EditText
+        android:id="@+id/image_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이미지 출처" />
+
+    <EditText
+        android:id="@+id/units_in_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="재고" />
+    <EditText
+        android:id="@+id/buy_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="누적 판매량" />
+
+    <!-- 필요한 다른 도서 정보 입력 필드들 -->
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수정" />
+
+</LinearLayout>

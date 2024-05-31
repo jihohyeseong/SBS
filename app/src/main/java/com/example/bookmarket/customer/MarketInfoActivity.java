@@ -32,12 +32,12 @@ public class MarketInfoActivity extends AppCompatActivity  implements OnMapReady
     }
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng latLng = new LatLng(37.555426,126.912538);
+        LatLng latLng = new LatLng(37.5828,127.0106);
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(latLng);
-        markerOptions.title("(주)도서출판길벗");
-        markerOptions.snippet("서울시 마포구 월드컵로 10길 56");
+        markerOptions.title("(주)SBS Market");
+        markerOptions.snippet("서울시 성북구 한성대 상상관");
         markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.location));
         googleMap.addMarker(markerOptions);
 

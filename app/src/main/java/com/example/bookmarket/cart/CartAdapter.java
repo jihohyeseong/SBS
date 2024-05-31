@@ -1,10 +1,8 @@
 package com.example.bookmarket.cart;
 
-import static com.example.bookmarket.MainActivity.cartRepositoryObj;
-import static com.example.bookmarket.cart.CartActivity.cartUpdate;
-
 import android.content.Context;
 import android.content.DialogInterface;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,140 +16,119 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.example.bookmarket.MainActivity;
 import com.example.bookmarket.R;
+import com.example.bookmarket.dto.CartDto;
+import com.example.bookmarket.dto.CartRepository;
 import com.example.bookmarket.model.Book;
 
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
-    Context context;
+    private List<CartDto> cartItems;
+    private List<Book> books;
+    private Context context;
+    private OnSelectChangedListener selectChangedListener;
 
-
-    public CartAdapter(Context context) {
+    public CartAdapter(Context context, List<CartDto> cartItems) {
         this.context = context;
+        this.cartItems = new ArrayList<>(cartItems);
     }
-
-    private CartAdapter.OnSelectChangedListener  selectChangedListener;
 
     @NonNull
     @Override
-    public CartAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recyclerview_cart_item, parent, false);
-
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CartAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        CartDto cartItem = cartItems.get(position);
 
-        Book book = cartRepositoryObj.cartBooks.get(position);
+        holder.cartTitle.setText(cartItem.getBookname());
+        holder.cartPrice.setText(String.format("%,d원", cartItem.getPrice()));
+        holder.cartQuantity.setText(String.valueOf(cartItem.getQuantity()));
+        holder.cartSum.setText(String.format("%,d원", cartItem.getPrice() * cartItem.getQuantity()));
+        holder.cartCheckBox.setChecked(cartItem.isCheck());
 
-        holder.cartTitle.setText(book.name);
-        holder.cartPrice.setText(Integer.toString(book.price));
-        holder.cartCheckBox.setChecked(book.isCheck);
-        holder.cartQuantity.setText(Integer.toString(book.quantity));
-        holder.cartSum.setText(Integer.toString(book.price * book.quantity));
-
-        switch (book.bookid) {
-            case "BOOK1234":
-                holder.cartPicture.setImageResource(R.drawable.book11);
-                break;
-
-            case "BOOK1235":
-                holder.cartPicture.setImageResource(R.drawable.book21);
-                break;
-
-            case "BOOK1236":
-                holder.cartPicture.setImageResource(R.drawable.book31);
-                break;
-
-
-            case "BOOK1237":
-                holder.cartPicture.setImageResource(R.drawable.book41);
-                break;
+        // Image Loading with Glide
+        if (cartItem.getImageUrl() != null && !cartItem.getImageUrl().isEmpty()) {
+            Glide.with(context)
+                    .load(cartItem.getImageUrl())
+                    .placeholder(R.drawable.placeholder_image)  // Set your placeholder image
+                    .error(R.drawable.baseline_error_24)  // Set your error image
+                    .centerInside()
+                    .into(holder.cartPicture);
+        } else {
+            Glide.with(context).load(R.drawable.placeholder_image).into(holder.cartPicture);  // Load a default image if the URL is not valid
         }
 
-        holder.cartCheckBox.setOnClickListener(view -> {
-            book.isCheck = holder.cartCheckBox.isChecked();
-            selectChangedListener.onSelectChanged(cartRepositoryObj.cartBooks);
+
+
+        // 체크박스 변경 리스너 설정
+        holder.cartCheckBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            cartItem.setCheck(isChecked);
+            selectChangedListener.onSelectChanged(cartItems);
         });
-        holder.cartDelete.setOnClickListener(view -> {
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
-            alertDialog.setTitle("도서 상품 삭제");
-            alertDialog.setMessage("선택한 도서 상품을 삭제하겠습니까?");
-            alertDialog.setIcon(R.drawable.dialog_cat);
 
-            alertDialog.setPositiveButton("예", (dialogInterface, i) -> {
-                // Log.d("111111111" , "     "+position);
-                Book book1 = cartRepositoryObj.cartBooks.get(position);
-                cartRepositoryObj.cartBooks.remove(book1);
+        // 삭제 버튼 리스너 설정
+        holder.cartDelete.setOnClickListener(view -> showDeleteDialog(cartItem));
+    }
 
-                cartUpdate();
-                notifyItemRemoved(position);
-                notifyItemRangeChanged(position, cartRepositoryObj.cartBooks.size());
-
-
-                // selectChangedListener.onSelectChanged(cartRepositoryObj.cartBooks);
-
-                dialogInterface.cancel();
-
-
-            });
-            alertDialog.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    dialogInterface.cancel();
-                }
-            });
-
-            alertDialog.show();
-        });
+    private void showDeleteDialog(CartDto cartItem) {
+        new AlertDialog.Builder(context)
+                .setTitle("도서 상품 삭제")
+                .setMessage("선택한 도서 상품을 삭제하시겠습니까?")
+                .setIcon(R.drawable.dialog_cat)
+                .setPositiveButton("예", (dialog, which) -> {
+                    CartRepository.getInstance().removeCartItem(cartItem);
+                    cartItems.remove(cartItem);
+                    notifyDataSetChanged();
+                    selectChangedListener.onSelectChanged(cartItems);
+                })
+                .setNegativeButton("아니오", null)
+                .show();
     }
 
     @Override
     public int getItemCount() {
-        return cartRepositoryObj.cartBooks.size();
+        return cartItems.size();
     }
 
-    interface OnSelectChangedListener {
-        void onSelectChanged(ArrayList<Book> item );
+    public interface OnSelectChangedListener {
+        void onSelectChanged(List<CartDto> items);
     }
 
-
-    void setOnSelectChangedListener( OnSelectChangedListener listener) {
-        selectChangedListener = listener;
+    public void setOnSelectChangedListener(OnSelectChangedListener listener) {
+        this.selectChangedListener = listener;
     }
 
+    public void setCartItems(List<CartDto> cartItems) {
+        this.cartItems = new ArrayList<>(cartItems);
+        notifyDataSetChanged();
+    }
 
-
-    class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView cartPicture;
-        TextView cartTitle;
-        TextView cartPrice;
-        CardView cartParentLayout;
+        TextView cartTitle, cartPrice, cartQuantity, cartSum;
         CheckBox cartCheckBox;
         ImageButton cartDelete;
-        TextView cartQuantity;
-        TextView cartSum;
+        CardView cartParentLayout;
 
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             cartPicture = itemView.findViewById(R.id.cart_pic);
             cartTitle = itemView.findViewById(R.id.title);
             cartPrice = itemView.findViewById(R.id.price);
-            cartParentLayout = itemView.findViewById(R.id.cart_parent_layout);
-            cartDelete = itemView.findViewById(R.id.cart_delete);
-
-            cartCheckBox= itemView.findViewById(R.id.cart_item_checkbox);
+            cartCheckBox = itemView.findViewById(R.id.cart_item_checkbox);
             cartQuantity = itemView.findViewById(R.id.quantity);
             cartSum = itemView.findViewById(R.id.sum);
+            cartDelete = itemView.findViewById(R.id.cart_delete);
+            cartParentLayout = itemView.findViewById(R.id.cart_parent_layout);
         }
-
-
     }
-
-
-
 }

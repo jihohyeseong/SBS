@@ -35,8 +35,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_launcher_background"
-                app:srcCompat="@drawable/book11" />
+                android:src="@drawable/placeholder_image" />
 
         </LinearLayout>
 
@@ -69,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="cart_title"
-                        android:textColor="@android:color/black"
+                        android:textColor="#03A9F4"
                         android:textSize="13sp" />
 
 
@@ -92,7 +91,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="cart_price"
-                        android:textColor="@android:color/black"
+                        android:textColor="#03A9F4"
                         android:textSize="13sp" />
 
                 </LinearLayout>

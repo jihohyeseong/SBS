@@ -34,7 +34,7 @@
             android:layout_height="50dp"
             android:src="@drawable/id_before" />
         <EditText
-            android:id="@+id/userID"
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -82,12 +82,12 @@
             android:layout_height="50dp"
             android:src="@drawable/passwd_before" />
         <EditText
-            android:id="@+id/userName"
+            android:id="@+id/userEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:hint="이름을 입력하세요"
+            android:hint="이메일을 입력하세요"
             android:inputType="textPersonName"
             android:textColor="#525252"
             android:textColorHint="#ccc"
@@ -106,7 +106,7 @@
             android:layout_height="50dp"
             android:src="@drawable/passwd_before" />
         <EditText
-            android:id="@+id/userPhone"
+            android:id="@+id/userPhoneNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -118,6 +118,31 @@
             android:textCursorDrawable="@android:color/darker_gray"
             android:textSize="14sp" />
     </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/passwd_before" />
+        <EditText
+            android:id="@+id/userAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="주소를 입력하세요"
+            android:inputType="textPersonName"
+            android:textColor="#525252"
+            android:textColorHint="#ccc"
+            android:textCursorDrawable="@android:color/darker_gray"
+            android:textSize="14sp" />
+    </FrameLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
