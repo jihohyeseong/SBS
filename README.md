@@ -271,6 +271,16 @@ HSU 2024 Capstone Project
 
 <br/>
 
+### 캡스톤 당일 단체 사진
+<details>
+<summary> ▶️ Click! </summary>
+<ul>
+        <img src="https://github.com/jihohyeseong/SBS/blob/ios/IMG_4502.png" width="300">
+</ul>
+</details>
+<br/>
+
+
 
 ## 9.25한성공학경진대회발표시 추가예정사항
 + 실시간 배송 기능 추가
