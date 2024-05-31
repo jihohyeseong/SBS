@@ -17,7 +17,7 @@ import java.util.Map;
 @Transactional
 public class TextToSpeechService {
 
-    static final String API_TOKEN = "__pltDPKi4Mp65F8a9AEG93dFeRtZcJv7EeCbVzDoZoAU";
+    static final String API_TOKEN = "${}";
     private TextToSpeechResponse textToSpeech;
 
     public TextToSpeechResponse textToSpeech(EBookDto eBookDto){
