@@ -161,29 +161,29 @@ HSU 2024 Capstone Project
 <ul>
     <li>회원가입</li>
       <img src="https://github.com/jihohyeseong/SBS/assets/113437469/f57de2ef-7b9d-4459-8fe6-8343fa7c6fe7" width="300">
-       (https://github.com/jihohyeseong/SBS/assets/113437469/f57de2ef-7b9d-4459-8fe6-8343fa7c6fe7)
     <li>로그인</li>
-       (https://github.com/jihohyeseong/SBS/assets/113437469/3e74f72c-e4ba-4c22-8d48-7c542fc54082)
+       <img src="https://github.com/jihohyeseong/SBS/assets/113437469/3e74f72c-e4ba-4c22-8d48-7c542fc54082" width="300">
     <li>메인페이지</li>
-       (https://github.com/jihohyeseong/SBS/assets/113437469/7674eeff-383a-4576-8426-2a3dadc6a789)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/7674eeff-383a-4576-8426-2a3dadc6a789" width="300">
     <li>도서목록</li>
-       (https://github.com/jihohyeseong/SBS/assets/113437469/a340b669-e256-40cf-8413-fb2536cc09b3)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/a340b669-e256-40cf-8413-fb2536cc09b3" width="300">
     <li>세부정보</li>
-       (https://github.com/jihohyeseong/SBS/assets/113437469/bc7a52d6-179b-4cda-a660-d07849f24c47)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/bc7a52d6-179b-4cda-a660-d07849f24c47" width="300">
     <li>댓글</li>
-        (https://github.com/jihohyeseong/SBS/assets/113437469/e87b87fd-6c83-47c5-af3a-98df7af3df9d)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/e87b87fd-6c83-47c5-af3a-98df7af3df9d" width="300">
     <li>도서랭킹(정렬1)</li>
-        (https://github.com/jihohyeseong/SBS/assets/113437469/2fa5c3ec-864e-4569-8679-876100e144c7)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/2fa5c3ec-864e-4569-8679-876100e144c7" width="300">  
     <li>신간도서(정렬2)</li>
-       (https://github.com/jihohyeseong/SBS/assets/113437469/e389afb2-34e1-41c9-ae51-a95cd0b25a37)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/e389afb2-34e1-41c9-ae51-a95cd0b25a37" width="300">
     <li>장바구니</li>
-       (https://github.com/jihohyeseong/SBS/assets/113437469/299ecc00-46ed-4e5e-842a-6e89d1eee701)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/299ecc00-46ed-4e5e-842a-6e89d1eee701" width="300">
     <li>주문서</li>   
-      (https://github.com/jihohyeseong/SBS/assets/113437469/c1ff551c-b3cc-48ba-9aeb-25fa3044ae87)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/c1ff551c-b3cc-48ba-9aeb-25fa3044ae87" width="300">
     <li>카카오페이</li>
-        (https://github.com/jihohyeseong/SBS/assets/113437469/f137ebd3-43a2-42ad-9f1e-d425b07d6059)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/f137ebd3-43a2-42ad-9f1e-d425b07d6059" width="300">
     <li>마이페이지</li>
-        (https://github.com/jihohyeseong/SBS/assets/113437469/707aa501-7589-4244-852d-782da4de3e3d)
+    <img src="https://github.com/jihohyeseong/SBS/assets/113437469/707aa501-7589-4244-852d-782da4de3e3d" width="300">
+       
 
 </ul>
 </details>
