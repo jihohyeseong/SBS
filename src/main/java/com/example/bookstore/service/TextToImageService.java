@@ -17,7 +17,7 @@ import java.util.Map;
 @Transactional
 public class TextToImageService {
 
-    static final String REST_API_KEY = "cdc795d7a4afd0d4eb08c03f843b9054";
+    static final String REST_API_KEY = "${}";
     private TextToImageResponse textToImage;
 
     public TextToImageResponse textToImage(EBookDto eBookDto){
